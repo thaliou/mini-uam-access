@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Chargement...");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/test")
+    fetch("https://mini-uam-access.onrender.com/api/test")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch(() => setMessage("Erreur de connexion ❌"));

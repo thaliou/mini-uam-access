@@ -11,8 +11,9 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: "40px", fontSize: "24px" }}>
+    <div style={{ padding: "40px", fontSize: "24px", color: "red" }}>
       <h1>Mini projet MERN</h1>
+      <h2>Petite Modification pour la branche de travail feature/frontend</h2>
       <p>{message}</p>
     </div>
   );

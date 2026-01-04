@@ -2,14 +2,14 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-
-// autoriser les requêtes du frontend
 app.use(cors());
 
 app.get("/api/test", (req, res) => {
-  res.json({ message: "Connexion MERN réussie 🚀" });
+  res.json({ message: "Backend en ligne 🚀" });
 });
 
-app.listen(5000, () => {
-  console.log("Backend lancé sur http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log("Serveur lancé sur le port", PORT);
 });
